@@ -1,12 +1,8 @@
-const funSearch = function (params) {
+const funSearch = () => {
   const input = document.querySelector(".search-block > input");
   const btnSeacrh = document.querySelector(".search-block > button");
 
-  input.addEventListener("input", function (event) {
-    console.log(event.target.value);
-  });
-
-  btnSeacrh.addEventListener("click", function () {
+  btnSeacrh.addEventListener("click", () => {
     console.log(input.value);
   });
 };
