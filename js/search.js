@@ -1,7 +1,8 @@
-const funSearch = () => {
+const funSearch = function (params) {
   const input = document.querySelector(".search-block > input");
   const btnSeacrh = document.querySelector(".search-block > button");
 
+<<<<<<< HEAD
   const renderGoods = (goods) => {
     const goodsContainer = document.querySelector(".long-goods-list");
     goodsContainer.innerHTML = "";
@@ -42,6 +43,14 @@ const funSearch = () => {
 
   btnSeacrh.addEventListener("click", () => {
     getData(input.value);
+=======
+  input.addEventListener("input", function (event) {
+    console.log(event.target.value);
+  });
+
+  btnSeacrh.addEventListener("click", function () {
+    console.log(input.value);
+>>>>>>> parent of 516358a (Выволнил задание Lesson2)
   });
 };
 
