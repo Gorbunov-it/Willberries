@@ -10,9 +10,6 @@ const funCart = (params) => {
   btnModalCart.addEventListener("click", () => {
     modal_cart.style.display = "";
   });
-
-  console.log("btnCart: ", btnCart);
-  console.log("modal_cart: ", modal_cart);
 };
 
 funCart();
