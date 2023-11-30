@@ -6,8 +6,8 @@ const funSearch = function (params) {
     console.log(event.target.value);
   });
 
-  btnSeacrh.addEventListener("click", function () {
-    console.log(input.value);
+  btnSeacrh.addEventListener("click", () => {
+    getData(input.value);
   });
 };
 
