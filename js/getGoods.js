@@ -26,7 +26,6 @@ const getGoods = function () {
   };
 
   const getData = (value, category) => {
-    debugger;
     fetch("./db/db.json")
       .then((response) => response.json())
       .then((data) => {
@@ -43,7 +42,6 @@ const getGoods = function () {
 
   links.forEach((link) => {
     link.addEventListener("click", (event) => {
-      debugger;
       event.preventDefault();
       const linkValue = link.textContent;
       const category = link.dataset.field;
